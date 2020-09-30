@@ -59,16 +59,12 @@ def analyze(request):
 
         params = {'purpose': 'Removed NewLines', 'analyzed_text': analyzed}
     
-    if (numberremover == "on"):
-        analyzed = ""
-        numbers = '0123456789'
-
-        for char in djtext:
-            if char not in numbers:
-                analyzed = analyzed + char
-        
-        params = {'purpose': 'Removed NewLines', 'analyzed_text': analyzed}
-        djtext = analyzed
+    
+    
+    
+    
+    
+    
 
     
     if(removepunc != "on" and newlineremover!="on" and extraspaceremover!="on" and fullcaps!="on" and numberremover != "on"):
